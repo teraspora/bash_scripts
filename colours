@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Script to display all 256 terminal colors using tput
+# John Lynch, 2025
+
+for i in {0..255}; do
+  tput setaf $i
+  printf '%-7s' "$ tput setaf $i;      "
+  (( (i + 1) % 8 == 0 )) && echo
+done
+tput sgr0
