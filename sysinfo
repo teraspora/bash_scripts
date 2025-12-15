@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Script to display system information based on provided flags
+# John Lynch, 2025
+
 show_machine_info() {
     tput setaf 1
     echo -e "\nTerminal session started on $(date "+%A %B %-d at %H:%M" | sed 's/ 1 / 1st /; s/ 2 / 2nd /; s/ 3 / 3rd /; s/ 21 / 21st /; s/ 22 / 22nd /; s/ 23 / 23rd /; s/ 31 / 31st /; s/ \([4-9]\|1[0-9]\|2[04-9]\|30\) / \1th /'):"
